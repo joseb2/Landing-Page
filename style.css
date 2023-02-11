@@ -1,0 +1,34 @@
+html, 
+body { 
+    height: 100%; 
+    margin: 0;
+
+}
+
+.flex-container {  
+    display: flex;  
+}  
+.flex-container div { 
+    flex: 1; 
+} 
+.headContainer { 
+    display: flex;
+    justify-content: space-between;
+    border-color: teal;
+    font: 24px; 
+       /*color:#F9FAF8;*/
+    background-color: brown; /*#1f2937;*/  
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.links { 
+    display: flex;
+    justify-content: flex-end;
+    
+    
+
+}
+
+
