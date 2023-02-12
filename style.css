@@ -1,42 +1,54 @@
 html, 
 body { 
-    height: 100%; 
+    height: 100%;
     margin: 0px;
+    border-color: red;
+
 }
 .flex-container { 
-    margin: 0px;
-    display: flex;  
+    display: flex;
+    flex-direction: column; 
+    border-color: red;
+    
+    
     
 }  
-.flex-container div { 
-    flex: 1;
-    
-} 
-.headContainer { 
-    
-    justify-content: space-between;
-    display: flex;
+.flex-container #headContainer { 
+    border-color: red;
     border-color: teal;
        /*color:#F9FAF8;*/
     background-color: #1f2937; /*#1f2937;*/  
-    padding-left: 10%;
-    padding-right: 10%;   
+     
 }
-#headerLogo {
-    color:white; 
+.flex-container #headerLogo {
+    background-color: #1f2937;
+    display: flex;
+    color:white;    
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    
  
 }
 a { 
+
+    display: flex;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    
+    
+   
 }
 .links { 
-    justify-content: flex-end; 
-    gap: 10px; 
+    justify-content: flex-end;
     display: flex;
+    gap: 10px;  
+    
 }
 
+#signupButton {
+    color: red;
+    background-color: #1f2937;  
+
+}
 
