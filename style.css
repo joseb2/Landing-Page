@@ -6,10 +6,12 @@ body {
 .flex-container { 
     margin: 0px;
     display: flex;  
+    flex-direction: column;
     
 }  
-.flex-container div { 
+.flex-container div span { 
     flex: 1;
+    
     
 } 
 .headContainer { 
@@ -23,6 +25,7 @@ body {
     padding-right: 10%;   
 }
 #headerLogo {
+    padding: 1%; 
     color:white; 
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
@@ -34,9 +37,39 @@ a {
     text-decoration: none;
 }
 .links { 
+    padding: 1%; 
     justify-content: flex-end; 
     gap: 10px; 
     display: flex;
 }
 
+.secondContainer { 
+    background-color: #1f2937;
+    gap: 0px;
+}
+#Awe { 
+    color: white;
+    background-color: #1f2937;
+    padding: 3%;
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+#Desc { 
+
+    color: white;
+    background-color: #1f2937;
+    padding: 3%;
+    font-size: 20px;
+    flex-wrap: wrap;
+
+    
+}
+#Butto { 
+    color: white;
+    padding: 3%;
+    font-size: 15px;
+
+    
+}
 
