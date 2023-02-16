@@ -7,48 +7,74 @@ body {
 }
 .flex-container { 
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     border-color: red;
-    
-    
     
 }  
-.flex-container #headContainer { 
-    border-color: red;
-    border-color: teal;
-       /*color:#F9FAF8;*/
-    background-color: #1f2937; /*#1f2937;*/  
-     
-}
-.flex-container #headerLogo {
+
+.headerBar {
+    display: flex;
     background-color: #1f2937;
-    display: flex;
-    color:white;    
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    
- 
-}
-a { 
-
-    display: flex;
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    
-    
-   
-}
-.links { 
-    justify-content: flex-end;
-    display: flex;
-    gap: 10px;  
-    
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#signupButton {
-    color: red;
-    background-color: #1f2937;  
+  
+.headerBar #headerLeftBox { 
+
+    font-family: 'Courier New', Courier, monospace;
+    color:#f9FAf8; 
+
+    
+}    
+
+.linkBox { 
+   flex-direction: row;
+}
+
+a {
+    flex-flow: wrap;
+    gap: 30px;
+    color:#e5e7eb;
+    text-decoration:none; 
+} 
+
+.secondBar { 
+    background-color: #1f2937;
+
+} 
+
+#descFirst { 
+    font-weight: bolder;
+    color:#f9FAf8
+}
+
+#descSecond { 
+    color:#e5e7eb;
 
 }
 
+#signUp { 
+    background-color: #3882F6;
+    color:#f9FAf8
+}
+
+
+/* 
+<body> 
+   <div class="flex-container">
+    <div class = "headerBar">
+        <span id = "headerLeftBox">Header Logo</span>
+        <span id = "headerRightBox"></span> 
+    </div>
+    <div class ="secondBar">
+        <div id = "secondBarLeft">
+            <span id = "descFirst">Lorem ipsum dolor sit amet, consectetur</span>
+            <span id = "descSecond">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacinia facilisis tortor, a iaculis est.</span>
+            <button id = "signUp">Sign up</button>
+        </div>
+        <div id = "placeHolderImage">
+            this is a placeholder for an image
+        </div> 
+        
+*/
