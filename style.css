@@ -1,41 +1,104 @@
 html, 
 body { 
-    height: 100%; 
+    height: 100%;
     margin: 0px;
+
+    border-color: red;
+
 }
 .flex-container { 
-    margin: 0px;
-    display: flex;  
+    display: flex;
     flex-direction: column;
+    border-color: red;
     
 }  
-.flex-container div span { 
-    flex: 1;
-    
-    
-} 
-.headContainer { 
-    
-    justify-content: space-between;
+
+.headerBar { 
     display: flex;
-    border-color: teal;
-       /*color:#F9FAF8;*/
-    background-color: #1f2937; /*#1f2937;*/  
-    padding-left: 10%;
-    padding-right: 10%;   
+    background-color: #1f2937;
+    justify-content: space-between;
+    padding: 3%; 
+    
+    
+
+
 }
-#headerLogo {
-    padding: 1%; 
-    color:white; 
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+
+.headerBar #headerLeftBox { 
+    display: flex; 
+    
+    font-family: 'Courier New', Courier, monospace;
+    color:#f9FAf8; 
+    
+
+}    
+
+.linkBox { 
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    
+
+}
+
+a {
+    color:#f9FAf8;
+    text-decoration:none;
+
+} 
+
+.secondBar { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #1f2937;
+    
+
+
+} 
+
+
+.secondBarLeft { 
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    padding: 3%;
  
 }
-a { 
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
+
+#descFirst { 
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    order: 1;
+
 }
+
+#descSecond { 
+    color:#e5e7eb;
+    order: 2;
+
+}
+#buttonID { 
+    background-color: #1f2937;
+    order: 3; 
+    align-content: center;
+    text-align: center;
+    background-color: #3882F6;
+    color:#f9FAf8; 
+    width: 2px;
+    justify-content: flex-start;
+    white-space: normal;
+}
+
+button { 
+    white-space: normal;
+    background-color: teal;
+    height: 35px;
+    width: 4em
+
+}
+
 .links { 
     padding: 1%; 
     justify-content: flex-end; 
@@ -43,33 +106,28 @@ a {
     display: flex;
 }
 
-.secondContainer { 
-    background-color: #1f2937;
-    gap: 0px;
-}
-#Awe { 
-    color: white;
-    background-color: #1f2937;
-    padding: 3%;
-    font-size: 30px;
-    font-weight: bolder;
-    
-}
-#Desc { 
 
-    color: white;
-    background-color: #1f2937;
-    padding: 3%;
-    font-size: 20px;
-    flex-wrap: wrap;
-
-    
-}
-#Butto { 
-    color: white;
-    padding: 3%;
-    font-size: 15px;
-
-    
+#placeHolderImage {
+    display: flex;
+    justify-content: flex-end;
 }
 
+
+/* 
+<body> 
+   <div class="flex-container">
+    <div class = "headerBar">
+        <span id = "headerLeftBox">Header Logo</span>
+        <span id = "headerRightBox"></span> 
+    </div>
+    <div class ="secondBar">
+        <div id = "secondBarLeft">
+            <span id = "descFirst">Lorem ipsum dolor sit amet, consectetur</span>
+            <span id = "descSecond">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacinia facilisis tortor, a iaculis est.</span>
+            <button id = "signUp">Sign up</button>
+        </div>
+        <div id = "placeHolderImage">
+            this is a placeholder for an image
+        </div> 
+        
+*/
