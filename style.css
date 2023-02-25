@@ -5,7 +5,6 @@
 .flex-container { 
     display: flex;
     flex-direction: column;
-    border-color: red;
     
 }  
 
@@ -13,61 +12,70 @@
     
     display: flex;
     background-color: #1f2937;
-    justify-content: space-around;
-    height: 100px;
-    padding: 1%;
+    padding: 5.5%;
+    justify-content: space-between;
+  
     
-    
-    
-
 
 }
 
-.headerBar #headerLeftBox { 
+#headerLeftBox { 
     display: flex; 
     font-family: 'Courier New', Courier, monospace;
     color:#f9FAf8; 
     
-
-    
-
 }    
 
 .linkBox { 
     display: flex;
-   
-    flex-wrap: nowrap;
     gap: 15px;
     
 
 }
 
 a {
+  display: flex;
     color:#f9FAf8;
     text-decoration:none;
-
+  
 } 
+
+.topLink { 
+  padding: 5px;
+  border: solid;
+  border-radius: 15%;
+}
 
 .secondBar { 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background-color: #1f2937;
 } 
 .secondBarLeft { 
+  display: flex;
   height: 100%;
   width: 380px;
-  display: flex;
-  border: solid;
   padding: 5%;
-  flex-flow:column-reverse wrap; 
-  
- 
+  gap: 10px;
+  flex-flow:column wrap; 
 } 
+.secondBarImage {
+  display: flex;
+  padding: 5%;
+}
+
+#barImage { 
+  margin-top: -90px;
+}
+ 
+img {
+  object-fit: none;
+
+}
 .square {
     flex:1 1 auto;
-    
     /*placed solid border for reference*/
-
     width: 200px;
     margin: 1%; 
 
@@ -89,6 +97,7 @@ a {
     align-items: flex-start;
     background-color: #1f2937;  
     height: 100px; 
+    
   }
 
   .button { 
@@ -100,17 +109,20 @@ a {
     font-family: 'Courier New', Courier, monospace;
   }
   .btnOne { 
+    border: solid;
     border-radius: 12px;
+
 }
 
 
-  .two {
+  .three {
     width: 400px;  
     color: #E5E7EB; 
     font-family: 'Courier New', Courier, monospace;
     
   }
-  .three {
+
+  .two {
     width: 300px;
     font-size: 36px; 
     color: #f9FAf8; 
@@ -119,15 +131,52 @@ a {
     
   }
 
-
-#placeHolderImage {
-    display: flex;
-    border:solid;
-    width: 100%; 
-    justify-content: center;
-    align-items: center ;
+.thirdBar { 
+  display: flex;
+  justify-content: center;
+  padding: 2%;
 }
 
+.infoBar {
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.fourthBar { 
+  display: flex;
+  margin: 1%;
+  justify-content: center;
+  gap: 30px; 
+  height: 275px;
+  
+}
+
+.sub { 
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Image { 
+  width: 125px;
+  height: 125px;
+  border:solid;
+  border-color: #3882F6;
+
+}
+
+.description { 
+  display: flex;
+  width: 125px;
+  font-size: 13px;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5%;
+
+}
 
 /* 
 <body> 
